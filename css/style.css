@@ -92,6 +92,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 .button-share.active{
     background-color: var(--bg-card);
@@ -157,9 +158,7 @@ body{
     left:0px;
     border-radius: 0px;
     overflow: hidden;
-    .content-footer .profil-name{
-    color: var(--bg-darkGrayish);
-    font-weight:bolder;
+   
 }
 
 
