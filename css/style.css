@@ -1,0 +1,179 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root{
+    --bg-darkGrayish: hsl(217, 19%, 35%);
+    --bg-dark: hsl(214, 17%, 51%);
+    --bg-card: hsl(212, 23%, 69%);
+    --bg-color: hsl(210, 46%, 95%);
+
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    font-family:'Manrope',sans-serif;
+    font-size: 13px;
+    color: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+.card{
+    background-color: #ffff;
+    margin: auto 0 ;
+    display: flex;
+    max-width: 560px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+
+.image-flower{
+    width: 40%;
+    
+    
+}
+.image-flower img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+     width: 60%;
+     
+     margin:20px 0px 0px 0px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.card h3{
+    color: var(--bg-darkGrayish);
+    font-weight:bolder;
+    padding: 0px 15px;
+}
+.card h3+p{
+    padding: 0px 15px;
+}
+.content-footer{
+    padding: 0px 15px;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   
+}
+.content-footer .profil-name{
+    color: var(--bg-darkGrayish);
+    font-weight:bolder;
+}
+
+.profile{
+    display: flex;
+    gap: 10px;
+}
+.profil-avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+.button-share{
+    background-color: var(--bg-color);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-share.active{
+    background-color: var(--bg-card);
+}
+
+.attribution a{
+    color: var(--bg-dark);
+    text-decoration: none;
+}
+.share-menu{
+    display:none;
+    align-items: center;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--bg-darkGrayish);
+    position: absolute;
+    bottom: 40px;
+    left:120px;
+
+}
+.share-menu img{
+    width: 20px;
+    margin-left: 15px;
+   
+}
+.share-menu.active{
+    display: flex;
+}
+
+
+
+@media (max-width: 375px) {
+    .card{
+    background-color: #ffff;
+    margin: auto 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 560px;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+    
+}
+.image-flower{
+    width: 100%;
+    
+}
+.content{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+    
+}
+.content-footer .profile{
+  
+}
+.share-menu{
+    width: 100%;
+    height: 50px;
+    bottom: -9px;
+    left:0px;
+    border-radius: 0px;
+    overflow: hidden;
+    .content-footer .profil-name{
+    color: var(--bg-darkGrayish);
+    font-weight:bolder;
+}
+
+
+}
+.button-share{
+    position: relative;
+    z-index: 100;
+
+    
+}
+.profile.active{
+    visibility: hidden;
+}
+
+}
